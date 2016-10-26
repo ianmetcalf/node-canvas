@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <pango/pango.h>
 #include <glib.h>
+
+#include "Backends.h"
 #include "Canvas.h"
 #include "Image.h"
 #include "ImageData.h"
@@ -23,6 +25,7 @@
 #endif
 
 NAN_MODULE_INIT(init) {
+  Backends::Initialize(target);
   Canvas::Initialize(target);
   Image::Initialize(target);
   ImageData::Initialize(target);
