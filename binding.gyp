@@ -50,6 +50,7 @@
         'src/backend/ImageBackend.cc',
         'src/backend/PdfBackend.cc',
         'src/backend/SvgBackend.cc',
+        'src/backend/FBDevBackend.cc',
         'src/Backends.cc',
         'src/Canvas.cc',
         'src/CanvasGradient.cc',

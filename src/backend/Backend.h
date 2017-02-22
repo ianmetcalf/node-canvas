@@ -29,6 +29,7 @@ class Backend : public Nan::ObjectWrap
     cairo_surface_t* surface;
     Canvas* canvas;
 
+    Backend(string name);
     Backend(string name, int width, int height);
 
   public:
